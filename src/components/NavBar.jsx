@@ -1,7 +1,8 @@
 import { useState, useRef } from 'react';
 import { Sun, Moon, Gamepad2 } from 'lucide-react';
+import soundAud from '../assets/sound.mp3';
 
-const clickSoundUrl = "https://cdn.pixabay.com/audio/2022/03/15/audio_115b9b7b44.mp3";
+const clickSoundUrl = {soundAud}
 
 const NavBar = ({ theme, isScrolled, activeSection, scrollToSection, toggleTheme }) => {
   const [menuOpen, setMenuOpen] = useState(false);
