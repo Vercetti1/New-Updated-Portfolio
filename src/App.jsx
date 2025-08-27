@@ -27,7 +27,7 @@ const App = () => {
   const intervalRef = useRef(null);
 
   const texts = [
-    "Frontend Developer",
+    "A Frontend Developer",
     "React Developer", 
     "Problem Solver",
     "Creative Coder"
