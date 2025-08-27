@@ -1,54 +1,54 @@
 import { Github, ExternalLink } from 'lucide-react';
-import img1 from './assets/Foodie.png';
-import img2 from './assets/gemini.png';
-import img3 from './assets/say.io.png';
-import img4 from './assets/tic-tac-toe.png';
-import img5 from './assets/wallet-login.png';
+import img1 from '../assets/Foodie.png';
+import img2 from '../assets/gemini.png';
+import img3 from '../assets/say.io.png';
+import img4 from '../assets/tic-tac-toe.png';
+import img5 from '../assets/wallet-login.png';
 
 const projects = [
 	{
 		title: 'Tic-Tac-Toe Game',
-		description: '...',
-		tech: [React, TailwindCSS, JavaScript],
+		description: 'A fun tic-tac-toe game with React and TailwindCSS.',
+		tech: ['React', 'TailwindCSS', 'JavaScript'],
 		image: img4,
-		github: '...',
-		live: '...',
+		github: 'https://github.com/Vercetti1/07-tic-tac-toe-starting-project.git',
+		live: 'https://tictacproject.netlify.app/',
 		color: 'from-blue-500 to-purple-600',
 	},
 	{
 		title: 'Anonymous Web App',
-		description: '...',
-		tech: [rrr],
+		description: 'A secure anonymous messaging platform.',
+		tech: ['HTML', 'CSS', 'JavaScript'],
 		image: img3,
-		github: '...',
-		live: '...',
+		github: 'https://github.com/Vercetti1/Anonymous-.git',
+		live: 'https://quietio.netlify.app',
 		color: 'from-purple-500 to-pink-600',
 	},
 	{
 		title: 'E-Wallet Web App',
-		description: '...',
-		tech: [erer],
+		description: 'A digital wallet for easy online payments.',
+		tech: ['React', 'Node.js', 'MongoDB'],
 		image: img5,
-		github: '...',
-		live: '...',
+		github: 'https://github.com/Vercetti1/wallet-app.git',
+		live: 'https://t-wallet.netlify.app/',
 		color: 'from-green-500 to-teal-600',
 	},
 	{
 		title: 'Gemini AI Chatbot Clone',
-		description: '...',
-		tech: [rfnrf],
+		description: 'A chatbot powered by AI and TypeScript.',
+		tech: ['React', 'TypeScript', 'TailwindCSS'],
 		image: img2,
-		github: '...',
-		live: '...',
+		github: 'https://github.com/Vercetti1/Gemini-Powered-Chatbot-main.git',
+		live: 'https://tomisin-gemini.netlify.app/',
 		color: 'from-yellow-500 to-orange-600',
 	},
 	{
 		title: 'Foodie Web App',
-		description: '...',
-		tech: [fnj],
+		description: 'Discover and review restaurants near you.',
+		tech: ['React', 'Firebase', 'Geolocation'],
 		image: img1,
-		github: '...',
-		live: '...',
+		github: 'https://github.com/Vercetti1/Foodie.git',
+		live: 'https://thefoodie1.netlify.app/',
 		color: 'from-red-500 to-pink-600',
 	},
 ];
@@ -67,7 +67,7 @@ const ProjectsSection = ({ theme }) => (
 						style={{ animationDelay: `${index * 0.2}s` }}
 					>
 						<div
-							className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500 z-10`}
+							className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500 z-10 pointer-events-none`}
 						></div>
 						<div className="relative overflow-hidden">
 							<img
@@ -85,13 +85,16 @@ const ProjectsSection = ({ theme }) => (
 										<a
 											href={project.github}
 											target="_blank"
-											className="p-2 bg-gray-900/50 backdrop-blur-sm rounded-full text-white hover:bg-blue-600 transition-all duration-300 hover:scale-110"
+											rel="noopener noreferrer"
+											className="p-2 bg-gray-900/50 backdrop-blur-sm rounded-full text-white hover:bg-blue-600 transition-all duration-300 hover:scale-110 pointer-events-auto"
 										>
 											<Github className="w-4 h-4" />
 										</a>
 										<a
 											href={project.live}
-											className="p-2 bg-gray-900/50 backdrop-blur-sm rounded-full text-white hover:bg-purple-600 transition-all duration-300 hover:scale-110"
+											target="_blank"
+											rel="noopener noreferrer"
+											className="p-2 bg-gray-900/50 backdrop-blur-sm rounded-full text-white hover:bg-purple-600 transition-all duration-300 hover:scale-110 pointer-events-auto"
 										>
 											<ExternalLink className="w-4 h-4" />
 										</a>
