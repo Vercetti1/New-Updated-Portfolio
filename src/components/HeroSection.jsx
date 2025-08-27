@@ -1,4 +1,4 @@
-import { ChevronDown, Github, Linkedin, Mail, Gamepad2, Sparkles, FileText } from 'lucide-react';
+import { Github, Linkedin, Mail, Gamepad2, Sparkles, FileText } from 'lucide-react';
 
 const HeroSection = ({ theme, typingText, openGame, scrollToSection, resumeLink="https://resume.io/r/jdrlgivmJ" }) => (
   <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
