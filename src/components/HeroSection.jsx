@@ -1,6 +1,6 @@
 import { ChevronDown, Github, Linkedin, Mail, Gamepad2, Sparkles, FileText } from 'lucide-react';
 
-const HeroSection = ({ theme, typingText, openGame, scrollToSection, resumeLink }) => (
+const HeroSection = ({ theme, typingText, openGame, scrollToSection, resumeLink="https://resume.io/r/jdrlgivmJ" }) => (
   <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden">
     <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
       {[...Array(8)].map((_, i) => (
